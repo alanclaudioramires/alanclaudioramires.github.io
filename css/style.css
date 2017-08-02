@@ -12,101 +12,72 @@ html, body{
 }
 
 .container-header{
-	margin-top: 10%;
+	width: 570px;
+	margin-top: 150px;
 	background-color: rgba(255, 255, 255, 0.77);
 }
 
-.foto-perfil{
-	border-radius: 50%;
-	float: left;
+.container-header h1{
+	font: 57pt 'Roboto Condensed', sans-serif;
+	color: #646464;
+	text-shadow:0px 3px 1px #dbdbdb,0px 5px 0px #979797;
+	font-weight: 700;
+	padding-top: 10px;
 }
 
-.container-header h1{
-	font: 8rem 'Roboto Condensed', sans-serif;
-	color: #505050;
-	font-weight: 700;
-	margin: 0;
-	padding-left: 10px;
+.container-header .ribbon-text{
+	background: url(../img/ribbon1-lg.png);
+	width: 670px;
+	height: 38px;
+	margin-left: -66px;
 }
 
 .container-header h2{
-	font: 2rem Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: white;
-	background-color: #505050;
-	margin: 0;
-	padding: 3px 0 3px 90px;
+	font: 16pt Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	color: #ececec;
 }
 
 .container-header h3{
-	font: 3.5rem 'Dancing Script', cursive;
-	font-weight: 700;
-	margin: 0;
+	font: 18pt Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	color: #ffffff;
+	background-color: #d0d0d0;
+	display: inline-block;
+	margin-left: 20px;
+	padding: 2px;
 }
 
-.container-header p{
-	font: 2rem Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: #505050;
-	padding: 10px 0;
+.container-header p,
+.social{
+	font: 16pt Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	color: #5a5a5a;
+	padding: 10px 30px;
 }
 
 .social{
 	float: right;
-	position: absolute;
-	bottom: 0;
-	right: 20px;
 }
 
 @media screen and (max-width: 1199px) {
-	.container-header h1{
-		font-size: 6rem;
-		padding-left: 25px;
-	}
-
-	.container-header h2{
-		font-size: 1.6rem;
-		padding: 3px 0 3px 80px;
-	}
-
-	.container-header p{
-		font-size: 1.6rem;
+	.container-header .ribbon-text{
+		background: url(../img/ribbon1-md.png);
+		width: 727px;
+		height: 38px;
+		margin-left: -66px;
 	}
 }
 
 @media screen and (max-width: 991px) {
-	.container-header h1{
-		font-size: 5rem;
-		padding-left: 40px;
-	}
-
-	.container-header h2{
-		padding-left: 60px;
-	}
-
-	.social{
-		bottom: 5px;
+	.container-header .ribbon-text{
+		background: url(../img/ribbon1-sm.png);
+		width: 700px;
+		height: 38px;
+		margin-left: -65px;
 	}
 }
 
-@media screen and (max-width: 767px) {
-	.container-header h1,
-	.container-header h2,
-	.container-header h3,
-	.container-header p{
-		padding: 3px;
-		text-align: center;
-	}
+@media screen and (max-width: 768px) {
 
-	.container-header h1{
-		font-size: 3rem;
-	}
-
-	.container-header p{
-		padding: 10px 0;
-		text-align: justify;
-	}
-
-	.social{
-		position: relative;
-		margin-top: 10px;
+	.container-header h2{
+		background-color: #505050;
 	}
 }
