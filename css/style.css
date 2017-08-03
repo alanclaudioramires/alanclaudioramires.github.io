@@ -76,8 +76,27 @@ html, body{
 }
 
 @media screen and (max-width: 768px) {
-
 	.container-header h2{
 		background-color: #505050;
+	}
+}
+
+@media screen and (max-width: 612px) {
+	.container-header h1{
+		font-size: 32pt;
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	.container-header h2,
+	.container-header h3{
+		font-size: 10pt;
+		margin: 0;
+	}
+
+	.container-header p{
+		font-size: 10pt;
+		padding: 5px 0;
+		text-align: justify;
 	}
 }
