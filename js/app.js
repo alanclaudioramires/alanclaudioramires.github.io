@@ -1,3 +1,5 @@
-$(window).resize(function () {
-    $('#ribbon').toggleClass('ribbon-text', $(window).width() > 768);
+$(window).on('load', function() {
+    if ($(window).width() < 768) {
+            $("#ribbon").removeClass("ribbon-text");
+    }
 });
