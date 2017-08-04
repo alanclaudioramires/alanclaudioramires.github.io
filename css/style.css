@@ -39,11 +39,14 @@ html, body{
 
 .container-header h3{
 	font: 18pt Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-	color: #ffffff;
 	background-color: #d0d0d0;
 	display: inline-block;
 	margin-left: 20px;
 	padding: 2px;
+}
+
+.container-header h3 > a{
+	color: #ffffff;
 }
 
 .container-header p,
@@ -82,20 +85,32 @@ html, body{
 }
 
 @media screen and (max-width: 612px) {
+	.container-header{
+		margin-top: 70px;
+	}
 	.container-header h1{
 		font-size: 32pt;
 		margin-top: 10px;
 	}
 
-	.container-header h2,
-	.container-header h3{
+	.container-header h2{
 		font-size: 10pt;
 		margin: 10px 0 ;
+	}
+
+	.container-header h3{
+		font-size: 16pt;
+		margin: 10px 0;
 	}
 
 	.container-header p{
 		font-size: 10pt;
 		text-align: justify;
+		padding: 0;
+	}
+
+	.container-header h3,
+	.social{
 		padding: 0;
 	}
 }
